@@ -3,31 +3,43 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Interest</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
-    <link href="styles/pixelperfect.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
-
+    <link href=https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700 rel="stylesheet">
+    <link href=styles/pixelperfect.css rel="stylesheet">
+    <link href=styles/adaptive.css rel="stylesheet">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
 </head>
 <body>
+
+<header class="mobile__header">
+    <img class="logo" src="images/logo.png" alt="logo">
+    <div>
+        <img class="img__nav img_hover" src=images/search-icon.png alt="search">
+        <img class="img_hover img-cart" src=images/cart-icon.png alt="cart">
+        <img class="img_menu" src=images/icons/list.png alt="menu"></div>
+</header>
 
 <header class="header">
     <div class="login header__login">
         <div class="select">
-            <select class="selector selector__select">
-                <option>USD</option>
-                <option>RUB</option>
-            </select>
-            <select class="selector selector__select">
-                <option>ENG</option>
-                <option>RUS</option>
-            </select>
+            <div class="wrapper__select">
+                <select class="selector">
+                    <option>USD</option>
+                    <option>RUB</option>
+                </select>
+            </div>
+            <div class="wrapper__select">
+                <select class="selector">
+                    <option>ENG</option>
+                    <option>RUS</option>
+                </select>
+            </div>
         </div>
         <p class="sign sign__login">
             <a class="login_href">Log in </a> <span> or </span> <a class="signup_href"> Sign up </a>
         </p>
     </div>
     <div class="menu header__menu">
-        <img id="logo" src="images/logo.png">
+        <img class="logo" src="images/logo.png" alt="logo">
         <nav class="nav menu__nav">
             <ul class="ul ul__nav__menu">
                 <li class="main main__ul main_hover"> Stores </li>
@@ -36,18 +48,18 @@
                 <li class="main main__ul main_hover"> Blog </li>
                 <li class="main main__ul main_hover"> About us</li>
             </ul>
-            <img class="img__nav img_hover" src="images/search_icon.png">
-            <img class="img_hover" src="images/cart_icon.png">
+            <img class="img__nav img_hover" src=images/search_icon.png alt="search">
+            <img class="img_hover img-cart" src=images/cart_icon.png alt="cart">
         </nav>
     </div>
     <nav class="nav header__nav">
         <ul class="ul ul__nav">
-            <li class="category category__ul category_hover"> <img src="images/bed.png"> Bedroom </li>
-            <li class="category category__ul category_hover" > <img src="images/bathtub.png"> Bathroom </li>
-            <li class="category category__ul category_hover"> <img src="images/livingroom.png"> Living room </li>
-            <li class="category category__ul category_hover"> <img src="images/chef.png"> Kitchen </li>
-            <li class="category category__ul category_hover"> <img src="images/desk.png"> Office</li>
-            <li class="category category__ul category_hover"> <img src="images/teddy-bear.png"> For children</li>
+            <li class="category category__ul category_hover"> <img src=images/bed.png alt="bed"> Bedroom </li>
+            <li class="category category__ul category_hover" > <img src=images/bathtub.png alt="bathtub"> Bathroom </li>
+            <li class="category category__ul category_hover"> <img src=images/livingroom.png alt="livingroom"> Living room </li>
+            <li class="category category__ul category_hover"> <img src=images/chef.png alt="chef"> Kitchen </li>
+            <li class="category category__ul category_hover"> <img src=images/desk.png alt="desk"> Office</li>
+            <li class="category category__ul category_hover"> <img src=images/teddy-bear.png alt="bear"> For children</li>
         </ul>
     </nav>
     <div class="banner">
@@ -56,28 +68,29 @@
     </div>
 </header>
 
-<section class="products">
+<section class="wrapper">
     <H1 class="title"> <span class="title-span"> Our </span> products </H1>
+    <button class="button button-mob button_prod">All</button>
     <nav class="prod products__prod">
         <ul class="ul ul__prod">
-            <li class="prod-li prod__nav"> <img src="products/small/house.png"> All </li>
-            <li class="prod-li prod__nav" > <img src="products/small/chairs.png"> Furniture </li>
-            <li class="prod-li prod__nav"> <img src="products/small/sinks.png"> Bathroom </li>
-            <li class="prod-li prod__nav"> <img src="products/small/lamp.png"> Lighting </li>
-            <li class="prod-li prod__nav"> <img src="products/small/mirror.png"> Accessories</li>
-            <li class="prod-li prod__nav"> <img src="products/small/dishes.png"> Dishes</li>
-            <li class="prod-li prod__nav"> <img src="products/small/blinds.png"> Textile</li>
+            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/house.png alt="house"> All </li>
+            <li class="prod-li prod_hover prod__nav" > <img src=images/products/small/chairs.png alt="chairs"> Furniture </li>
+            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/sinks.png alt="sinks"> Bathroom </li>
+            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/lamp.png alt="lamp"> Lighting </li>
+            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/mirror.png alt="mirror"> Accessories</li>
+            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/dishes.png alt="dishes"> Dishes</li>
+            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/blinds.png alt="blinds"> Textile</li>
         </ul>
     </nav>
     <div class="all__products">
-        <div class="page__prod page page_hover">
+        <div class="page__prod page show-mob page_hover">
             <div class="img__prod image-prod chair"></div>
             <div class="stars stars__prod">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star.png">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star.png alt="star">
             </div>
             <span> Soft Home Chair </span>
             <div class="price">
@@ -85,14 +98,14 @@
                 <button class="button button_hover button_s"> Buy now</button>
             </div>
         </div>
-        <div class="page__prod page page_hover">
+        <div class="page__prod page show-mob page_hover">
             <div class="img__prod image-prod lamp"></div>
             <div class="stars stars__prod">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star.png">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star.png alt="star">
             </div>
             <span> Metal pyramid lamp </span>
             <div class="price">
@@ -100,14 +113,14 @@
                 <button class="button button_hover button_s"> Buy now</button>
             </div>
         </div>
-        <div class="page__prod page page_hover">
+        <div class="page__prod page show-mob page_hover">
             <div class="img__prod image-prod pillow"></div>
             <div class="stars stars__prod">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star.png">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star.png alt="star">
             </div>
             <span> Mellon soft pillow </span>
             <div class="price">
@@ -115,15 +128,14 @@
                 <button class="button button_hover button_s"> Buy now</button>
             </div>
         </div>
-
         <div class="page__prod page page_hover">
             <div class="img__prod image-prod alarm"></div>
             <div class="stars stars__prod">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
             </div>
             <span> Mini Metal Retro Alarm </span>
             <div class="price">
@@ -134,11 +146,11 @@
         <div class="page__prod page page_hover">
             <div class="img__prod image-prod shelf"></div>
             <div class="stars stars__prod">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star.png">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star.png alt="star">
             </div>
             <span> Triangular wooder shelf </span>
             <div class="price">
@@ -149,11 +161,11 @@
         <div class="page__prod page page_hover">
             <div class="img__prod image-prod mat"></div>
             <div class="stars stars__prod">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
             </div>
             <span> Soft bath mat </span>
             <div class="price">
@@ -161,16 +173,14 @@
                 <button class="button button_hover button_s"> Buy now</button>
             </div>
         </div>
-
-
         <div class="page__prod page page_hover">
             <div class="img__prod image-prod plate"></div>
             <div class="stars stars__prod">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star.png">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star.png alt="star">
             </div>
             <span> Soup beige plate </span>
             <div class="price">
@@ -181,11 +191,11 @@
         <div class="page__prod page page_hover">
             <div class="img__prod image-prod vase"></div>
             <div class="stars stars__prod">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star.png">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star.png alt="star">
             </div>
             <span> Polygonal ceramic vase </span>
             <div class="price">
@@ -196,11 +206,11 @@
         <div class="page__prod page page_hover">
             <div class="img__prod image-prod chair_green"></div>
             <div class="stars stars__prod">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
-                <img src="icons/star_act.png">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
+                <img src=images/icons/star_act.png alt="star_act">
             </div>
             <span> Bean bag chair green </span>
             <div class="price">
@@ -208,27 +218,24 @@
                 <button class="button button_hover button_s"> Buy now</button>
             </div>
         </div>
-
-
     </div>
     <button class="button button_see button_hover"> See more </button>
 </section>
 
-
-<section class="products">
+<section class="wrapper">
     <H1 class="title title__arrivals"> <span class="title-span"> New </span> arrivals </H1>
     <div class="arrivals-top">
         <div class="chair__arr chairArr">
-            Soft blue chair
+            <p>Soft blue chair</p>
             <span class="arr__price"> $65</span>
         </div>
         <div class="new__arr newarr">
             <div class="new__Arr new1">
-                Bathroom set
+                <p> Bathroom set</p>
                 <span class="arr__price"> $15</span>
             </div>
             <div class="new__Arr new2">
-                Metal Lamp
+                <p>Metal Lamp</p>
                 <span class="arr__price"> $5</span>
             </div>
         </div>
@@ -236,15 +243,15 @@
     <div class="arrivals-bottom">
         <div class="new__arr newarr2">
             <div class="new__Arr2 new3">
-                Wood Wall Clock
+                <p>Wood Wall Clock</p>
                 <span class="arr__price"> $15</span>
             </div>
             <div class="new__Arr2 new4">
-                Whistling kettle
+                <p>Whistling kettle</p>
                 <span class="arr__price"> $25</span>
             </div>
             <div class="new__Arr2 new5">
-                Stripped bed linen
+                <p>Stripped bed linen</p>
                 <span class="arr__price"> $7</span>
             </div>
         </div>
@@ -252,23 +259,21 @@
     <button class="button button_see button_hover"> See more </button>
 </section>
 
-
-
-
-<section class="projects products">
+<section class="projects wrapper">
     <H1 class="title title__arrivals"> <span class="title-span"> Our </span> projects </H1>
-    <div class="video__proj">
-        <video src="ikea.mp4" controls poster="vid.png">
-            <source src="ikea.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        </video>
-        <div class="video-image">
-            <div class="video-img vid__top">
-            </div>
-            <div class="video-img vid__bottom">
-            </div>
-        </div>
-    </div>
+    <!--<div class="video__proj ">-->
 
+        <!--<div class="video__main video">-->
+            <!--<video src="ikea.mp4" class="video__player" poster="vid.png" data-plyr='{"controls":["play-large","play","progress","current-time","duration"]}'></video>-->
+        <!--</div>-->
+
+        <!--<div class="video-image">-->
+            <!--<div class="video-img vid__top">-->
+            <!--</div>-->
+            <!--<div class="video-img vid__bottom">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
     <div class="comments">
        <span class="video-name">
         Our top design interiors full video review
@@ -276,32 +281,140 @@
         <span class="vid-comm">
             Apr 7, 2:20 pm
         </span>
-        <span class="vid-comm">
-            <img src="icons/like.png">
+        <span class="vid-comm like__video">
+            <img src=images/icons/like.png alt="like">
             105
         </span>
         <span class="vid-comm">
-            <img src="icons/comm.png">
+            <img src=images/icons/comm.png alt="comment">
             15 comments
         </span>
         <div class="com">
             <p>15 comments</p>
-            <img src="errow.png">
+            <img src=images/errow.png alt="errow">
+        </div>
+        <div class="persons__comments">
+            <div class="one__persons">
+                <img src=images/person1.png alt="Tyler">
+                <div>
+                    <span>Tyler Warren</span>
+                    <label>10:45, 8 Apr 17</label>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Thanks, Tyler W. </p>
+                    <a>Reply</a>
+                </div>
+            </div>
+            <div class="one__persons">
+                <img src=images/person2.png alt="Cara">
+                <div>
+                    <span>Cara Taylor</span>
+                    <label>11:24, 8 Apr 17</label>
+                    <p> The comment above by Tyler encouraged me to add a сlass aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos. Vestibulum ut magna consequat ex interdum ullamcorper eget
+                        non turpis. </p>
+                    <a>Reply</a>
+                </div>
+            </div>
+            <div class="one__persons">
+                <img src=images/person3.png alt="Mathew">
+                <div>
+                    <span>Mathew McDonald</span>
+                    <label>16:16, 8 Apr 17</label>
+                    <p> Sed efficitur sodales tortor ut sollicitudin. </p>
+                    <a>Reply</a>
+                </div>
+            </div>
+        </div>
+        <textarea placeholder="Your comment"></textarea>
+        <div class="pag">
+            <a>
+                Prev
+            </a>
+            <a>
+                2
+            </a>
+            <a>
+                3
+            </a>
+            <a>
+                4
+            </a>
+            <a>
+                5
+            </a>
+            <a>
+                Next
+            </a>
         </div>
     </div>
-
 </section>
 
-<section class="projects blog">
-    <H1 class="title title__arrivals"> <span class="title-span"> Our </span> blog </H1>
-
+<section class="wrapper">
+    <H1 class="title title__blog"> <span class="title-span"> Our </span> blog </H1>
+    <div class="blog__wrapper">
+        <div class="blog">
+            <div class="img__blog blog1">
+            </div>
+            <p>Lorem ipsum dolor sit amet</p>
+            <span class="vid-comm">
+            <img src=images/icons/like.png alt="like">
+            105 likes
+        </span>
+            <span class="vid-comm">
+            <img src=images/icons/comm.png alt="comment">
+            15 comments
+        </span> <br />
+            <button class="button button_m button_hover"> Read more </button>
+        </div>
+        <div class="blog">
+            <div class="img__blog blog2">
+            </div>
+            <p>Nullam molestie felis</p>
+            <span class="vid-comm">
+            <img src=images/icons/like.png alt="like">
+            116 likes
+        </span>
+            <span class="vid-comm">
+            <img src=images/icons/comm.png alt="comment">
+            13 comments
+        </span><br />
+            <button class="button button_m button_hover"> Read more </button>
+        </div>
+        <div class="blog">
+            <div class="img__blog blog3">
+            </div>
+            <p>Vivamus lacinia lacus</p>
+            <span class="vid-comm">
+            <img src=images/icons/like.png alt="like">
+            210 likes
+        </span>
+            <span class="vid-comm">
+            <img src=images/icons/comm.png alt="comment">
+            26 comments
+        </span><br />
+            <button class="button button_m button_hover"> Read more </button>
+        </div>
+    </div>
 </section>
 
-
-<section class="projects about">
-    <H1 class="title title__arrivals"> About <span class="title-span"> us </span>  </H1>
-    <div class="map"></div>
-</section>
-
+<footer class="about">
+    <H1 class="title address__title"> About <span class="title-span"> us </span>  </H1>
+    <div class="map">
+        <address class="address map__address">
+            <img src=images/logo.png alt="logo">
+            <span><img src=images/icons/placeholder-filled-point.png alt="point">35 Cedar Avenue, Pasadena, California</span> <br />
+            <span><img src=images/icons/icon%20phone.png alt="phone">8101408138659 </span><br />
+            <span><img src=images/icons/icon%20mail.png alt="mail">interest-shop@gmail.com</span><br />
+        </address>
+    </div>
+    <div class="social">
+        <img src=images/icons/fb.png alt="fb">
+        <img src=images/icons/vk.png alt="vk">
+        <img src=images/icons/in.png alt="in">
+        <img src=images/icons/ut.png alt="ut">
+    </div>
+</footer>
+<script src=https://cdn.plyr.io/2.0.18/plyr.js></script>
+<script> plyr.setup() </script>
+<link rel="stylesheet" href=https://cdn.plyr.io/2.0.18/plyr.css>
 </body>
 </html>
