@@ -21,72 +21,72 @@
 
 <header class="header">
     <div class="login header__login">
-        <div class="login__select">
+        <div class="select">
             <div class="wrapper-select">
-                <select class="selector">
+                <select class="selector wrapper-select__selector">
                     <option>USD</option>
                     <option>RUB</option>
                 </select>
             </div>
             <div class="wrapper-select">
-                <select class="selector">
+                <select class="selector wrapper-select__selector">
                     <option>ENG</option>
                     <option>RUS</option>
                 </select>
             </div>
         </div>
         <p class="sign login__sign">
-            <a class="login_href">Log in </a> <span> or </span> <a class="signup_href"> Sign up </a>
+            <a class="href sign__href1">Log in </a> <span> or </span> <a class="href sign__href2"> Sign up </a>
         </p>
     </div>
     <div class="menu header__menu">
         <img class="logo" src="images/logo.png" alt="logo">
-        <nav class="nav menu__nav">
-            <ul class="ul ul__nav__menu">
-                <li class="main main__ul main_hover"> Stores </li>
-                <li class="main main__ul main_hover"> Products </li>
-                <li class="main main__ul main_hover"> Projects </li>
-                <li class="main main__ul main_hover"> Blog </li>
-                <li class="main main__ul main_hover"> About us</li>
+        <nav class="nav">
+            <ul class="ul nav__ul">
+                <li class="main main_hover"> Stores </li>
+                <li class="main main_hover"> Products </li>
+                <li class="main main_hover"> Projects </li>
+                <li class="main main_hover"> Blog </li>
+                <li class="main main_hover"> About us</li>
             </ul>
-            <img class="img__nav img_hover" src=images/search_icon.png alt="search">
+            <img class="nav__img img_hover" src=images/search_icon.png alt="search">
             <img class="img_hover" src=images/cart_icon.png alt="cart">
         </nav>
     </div>
-    <nav class="nav header__nav">
-        <ul class="ul ul__nav">
-            <li class="category category__ul category_hover"> <img src=images/bed.png alt="bed"> Bedroom </li>
-            <li class="category category__ul category_hover" > <img src=images/bathtub.png alt="bathtub"> Bathroom </li>
-            <li class="category category__ul category_hover"> <img src=images/livingroom.png alt="livingroom"> Living room </li>
-            <li class="category category__ul category_hover"> <img src=images/chef.png alt="chef"> Kitchen </li>
-            <li class="category category__ul category_hover"> <img src=images/desk.png alt="desk"> Office</li>
-            <li class="category category__ul category_hover"> <img src=images/teddy-bear.png alt="bear"> For children</li>
+    <nav class="category-nav header__category-nav">
+        <ul class="ul category-nav__ul">
+            <li class="category category_hover"> <img src=images/bed.png alt="bed"> Bedroom </li>
+            <li class="category category_hover" > <img src=images/bathtub.png alt="bathtub"> Bathroom </li>
+            <li class="category category_hover"> <img src=images/livingroom.png alt="livingroom"> Living room </li>
+            <li class="category category_hover"> <img src=images/chef.png alt="chef"> Kitchen </li>
+            <li class="category category_hover"> <img src=images/desk.png alt="desk"> Office</li>
+            <li class="category category_hover"> <img src=images/teddy-bear.png alt="bear"> For children</li>
         </ul>
     </nav>
     <div class="banner">
-        <H1 class="title__banner">Find your dream interior</H1>
-        <button class="button banner_button button_hover">See all</button>
+        <H1 class="title-top banner__title-top">Find your dream interior</H1>
+        <button class="button button_big button_hover">See all</button>
     </div>
 </header>
 
-<section class="wrapper">
+<section class="wrapper products">
     <H1 class="title"> <span class="title-span"> Our </span> products </H1>
-    <button class="button button-mob button_prod link_hover">All</button>
+    <button class="button button-mob link_hover">All<img src="images/all-menu.png"></button>
     <nav class="prod products__prod">
-        <ul class="ul ul__prod">
-            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/house.png alt="house"> All </li>
-            <li class="prod-li prod_hover prod__nav" > <img src=images/products/small/chairs.png alt="chairs"> Furniture </li>
-            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/sinks.png alt="sinks"> Bathroom </li>
-            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/lamp.png alt="lamp"> Lighting </li>
-            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/mirror.png alt="mirror"> Accessories</li>
-            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/dishes.png alt="dishes"> Dishes</li>
-            <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/blinds.png alt="blinds"> Textile</li>
+        <ul class="ul prod__ul">
+            <li class="prod-li prod-li_hover prod-li_active"> <img src=images/products/small/house.png alt="house"> All </li>
+            <li class="prod-li prod-li_hover prod-li_active" > <img src=images/products/small/chairs.png alt="chairs"> Furniture </li>
+            <li class="prod-li prod-li_hover prod-li_active"> <img src=images/products/small/sinks.png alt="sinks"> Bathroom </li>
+            <li class="prod-li prod-li_hover prod-li_active"> <img src=images/products/small/lamp.png alt="lamp"> Lighting </li>
+            <li class="prod-li prod-li_hover prod-li_active"> <img src=images/products/small/mirror.png alt="mirror"> Accessories</li>
+            <li class="prod-li prod-li_hover prod-li_active"> <img src=images/products/small/dishes.png alt="dishes"> Dishes</li>
+            <li class="prod-li prod-li_hover prod-li_active"> <img src=images/products/small/blinds.png alt="blinds"> Textile</li>
         </ul>
     </nav>
-    <div class="all__products">
-        <div class="page__prod page show-mob page_hover">
-            <div class="img__prod image-prod chair"></div>
-            <div class="stars stars__prod">
+    <div class="products__all">
+        <div class="page show-mob page_hover">
+            <div class="image-prod chair"></div>
+            <div class="stars stars__page">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
@@ -99,9 +99,9 @@
                 <button class="button button_hover button_s"> Buy now</button>
             </div>
         </div>
-        <div class="page__prod page show-mob page_hover">
-            <div class="img__prod image-prod lamp"></div>
-            <div class="stars stars__prod">
+        <div class="page show-mob page_hover">
+            <div class="image-prod lamp"></div>
+            <div class="stars stars__page">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
@@ -114,9 +114,9 @@
                 <button class="button button_hover button_s"> Buy now</button>
             </div>
         </div>
-        <div class="page__prod page show-mob page_hover">
-            <div class="img__prod image-prod pillow"></div>
-            <div class="stars stars__prod">
+        <div class="page show-mob page_hover">
+            <div class="image-prod pillow"></div>
+            <div class="stars stars__page">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
@@ -129,9 +129,9 @@
                 <button class="button button_hover button_s"> Buy now</button>
             </div>
         </div>
-        <div class="page__prod page page_hover">
-            <div class="img__prod image-prod alarm"></div>
-            <div class="stars stars__prod">
+        <div class="page page_hover">
+            <div class="image-prod alarm"></div>
+            <div class="stars stars__page">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
@@ -145,8 +145,8 @@
             </div>
         </div>
         <div class="page__prod page page_hover">
-            <div class="img__prod image-prod shelf"></div>
-            <div class="stars stars__prod">
+            <div class="image-prod shelf"></div>
+            <div class="stars stars__page">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
@@ -160,8 +160,8 @@
             </div>
         </div>
         <div class="page__prod page page_hover">
-            <div class="img__prod image-prod mat"></div>
-            <div class="stars stars__prod">
+            <div class="image-prod mat"></div>
+            <div class="stars stars__page">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
@@ -175,8 +175,8 @@
             </div>
         </div>
         <div class="page__prod page page_hover">
-            <div class="img__prod image-prod plate"></div>
-            <div class="stars stars__prod">
+            <div class="image-prod plate"></div>
+            <div class="stars stars__page">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
@@ -190,8 +190,8 @@
             </div>
         </div>
         <div class="page__prod page page_hover">
-            <div class="img__prod image-prod vase"></div>
-            <div class="stars stars__prod">
+            <div class="image-prod vase"></div>
+            <div class="stars stars__page">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
@@ -205,8 +205,8 @@
             </div>
         </div>
         <div class="page__prod page page_hover">
-            <div class="img__prod image-prod chair_green"></div>
-            <div class="stars stars__prod">
+            <div class="image-prod chair_green"></div>
+            <div class="stars stars__page">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
                 <img src=images/icons/star_act.png alt="star_act">
@@ -226,34 +226,34 @@
 <section class="wrapper">
     <H1 class="title title__arrivals"> <span class="title-span"> New </span> arrivals </H1>
     <div class="arrivals-top">
-        <div class="chair__arr chairArr">
+        <div class="arrivals-top__chair-top chair-top">
             <p>Soft blue chair</p>
-            <span class="arr__price"> $65</span>
+            <span class="newprice"> $65</span>
         </div>
-        <div class="new__arr newarr">
-            <div class="new__Arr new1">
+        <div class="newarr">
+            <div class="new-arrivals new1">
                 <p> Bathroom set</p>
-                <span class="arr__price"> $15</span>
+                <span class="newprice"> $15</span>
             </div>
-            <div class="new__Arr new2">
+            <div class="new-arrivals new2">
                 <p>Metal Lamp</p>
-                <span class="arr__price"> $5</span>
+                <span class="newprice"> $5</span>
             </div>
         </div>
     </div>
     <div class="arrivals-bottom">
-        <div class="new__arr newarr2">
-            <div class="new__Arr2 new3">
+        <div class="arrivals-bottom-new">
+            <div class="new-arr2 new3">
                 <p>Wood Wall Clock</p>
-                <span class="arr__price"> $15</span>
+                <span class="newprice"> $15</span>
             </div>
-            <div class="new__Arr2 new4">
+            <div class="new-arr2 new4">
                 <p>Whistling kettle</p>
-                <span class="arr__price"> $25</span>
+                <span class="newprice"> $25</span>
             </div>
-            <div class="new__Arr2 new5">
+            <div class="new-arr2 new5">
                 <p>Stripped bed linen</p>
-                <span class="arr__price"> $7</span>
+                <span class="newprice"> $7</span>
             </div>
         </div>
     </div>
@@ -263,15 +263,13 @@
 <section class="projects wrapper">
     <H1 class="title title__arrivals"> <span class="title-span"> Our </span> projects </H1>
     <div class="video__proj ">
-
         <div class="video__main video">
             <video src="ikea.mp4" class="video__player" poster="vid.png" data-plyr='{"controls":["play-large","play","progress","current-time","duration"]}'></video>
         </div>
-
         <div class="video-image">
-            <div class="video-img vid__top">
+            <div class="video-img vid-top">
             </div>
-            <div class="video-img vid__bottom">
+            <div class="video-img vid-bottom">
             </div>
         </div>
     </div>
@@ -290,12 +288,12 @@
             <img src=images/icons/comm.png alt="comment" class="img_hover">
             15 comments
         </span>
-        <div class="com">
+        <div class="com comments__com">
             <p>15 comments</p>
             <img src=images/errow.png alt="errow" class="link_hover">
         </div>
-        <div class="persons__comments">
-            <div class="one__persons">
+        <div class="comments__persons">
+            <div class="persons__one">
                 <img src=images/person1.png alt="Tyler">
                 <div>
                     <span>Tyler Warren</span>
@@ -304,7 +302,7 @@
                     <a class="link_hover">Reply</a>
                 </div>
             </div>
-            <div class="one__persons">
+            <div class="persons__one">
                 <img src=images/person2.png alt="Cara">
                 <div>
                     <span>Cara Taylor</span>
@@ -315,7 +313,7 @@
                     <a class="link_hover">Reply</a>
                 </div>
             </div>
-            <div class="one__persons">
+            <div class="persons__one">
                 <img src=images/person3.png alt="Mathew">
                 <div>
                     <span>Mathew McDonald</span>
@@ -351,9 +349,9 @@
 
 <section class="wrapper">
     <H1 class="title title__blog"> <span class="title-span"> Our </span> blog </H1>
-    <div class="blog__wrapper">
+    <div class="wrapper__blog">
         <div class="blog">
-            <div class="img__blog blog1">
+            <div class="blog__img blog1">
             </div>
             <p>Lorem ipsum dolor sit amet</p>
             <span class="vid-comm">
@@ -367,7 +365,7 @@
             <button class="button button_m button_hover"> Read more </button>
         </div>
         <div class="blog">
-            <div class="img__blog blog2">
+            <div class="blog__img blog2">
             </div>
             <p>Nullam molestie felis</p>
             <span class="vid-comm">
@@ -381,7 +379,7 @@
             <button class="button button_m button_hover"> Read more </button>
         </div>
         <div class="blog">
-            <div class="img__blog blog3">
+            <div class="blog__img blog3">
             </div>
             <p>Vivamus lacinia lacus</p>
             <span class="vid-comm">
@@ -398,7 +396,7 @@
 </section>
 
 <footer class="about">
-    <H1 class="title address__title"> About <span class="title-span"> us </span>  </H1>
+    <H1 class="title about__title"> About <span class="title-span"> us </span>  </H1>
     <div class="map">
         <address class="address map__address">
             <img src=images/logo.png alt="logo">
