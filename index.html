@@ -10,31 +10,32 @@
 </head>
 <body>
 
-<header class="mobile__header">
+<header class="header_m">
     <img class="logo" src="images/logo.png" alt="logo">
     <div>
         <img class="img__nav img_hover" src=images/search-icon.png alt="search">
-        <img class="img_hover img-cart" src=images/cart-icon.png alt="cart">
-        <img class="img_menu" src=images/icons/list.png alt="menu"></div>
+        <img class="cart img_hover" src=images/cart-icon.png alt="cart">
+        <img class="img-menu img_hover" src=images/icons/list.png alt="menu" >
+    </div>
 </header>
 
 <header class="header">
     <div class="login header__login">
-        <div class="select">
-            <div class="wrapper__select">
+        <div class="login__select">
+            <div class="wrapper-select">
                 <select class="selector">
                     <option>USD</option>
                     <option>RUB</option>
                 </select>
             </div>
-            <div class="wrapper__select">
+            <div class="wrapper-select">
                 <select class="selector">
                     <option>ENG</option>
                     <option>RUS</option>
                 </select>
             </div>
         </div>
-        <p class="sign sign__login">
+        <p class="sign login__sign">
             <a class="login_href">Log in </a> <span> or </span> <a class="signup_href"> Sign up </a>
         </p>
     </div>
@@ -49,7 +50,7 @@
                 <li class="main main__ul main_hover"> About us</li>
             </ul>
             <img class="img__nav img_hover" src=images/search_icon.png alt="search">
-            <img class="img_hover img-cart" src=images/cart_icon.png alt="cart">
+            <img class="img_hover" src=images/cart_icon.png alt="cart">
         </nav>
     </div>
     <nav class="nav header__nav">
@@ -70,7 +71,7 @@
 
 <section class="wrapper">
     <H1 class="title"> <span class="title-span"> Our </span> products </H1>
-    <button class="button button-mob button_prod">All</button>
+    <button class="button button-mob button_prod link_hover">All</button>
     <nav class="prod products__prod">
         <ul class="ul ul__prod">
             <li class="prod-li prod_hover prod__nav"> <img src=images/products/small/house.png alt="house"> All </li>
@@ -261,19 +262,19 @@
 
 <section class="projects wrapper">
     <H1 class="title title__arrivals"> <span class="title-span"> Our </span> projects </H1>
-    <!--<div class="video__proj ">-->
+    <div class="video__proj ">
 
-        <!--<div class="video__main video">-->
-            <!--<video src="ikea.mp4" class="video__player" poster="vid.png" data-plyr='{"controls":["play-large","play","progress","current-time","duration"]}'></video>-->
-        <!--</div>-->
+        <div class="video__main video">
+            <video src="ikea.mp4" class="video__player" poster="vid.png" data-plyr='{"controls":["play-large","play","progress","current-time","duration"]}'></video>
+        </div>
 
-        <!--<div class="video-image">-->
-            <!--<div class="video-img vid__top">-->
-            <!--</div>-->
-            <!--<div class="video-img vid__bottom">-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
+        <div class="video-image">
+            <div class="video-img vid__top">
+            </div>
+            <div class="video-img vid__bottom">
+            </div>
+        </div>
+    </div>
     <div class="comments">
        <span class="video-name">
         Our top design interiors full video review
@@ -282,16 +283,16 @@
             Apr 7, 2:20 pm
         </span>
         <span class="vid-comm like__video">
-            <img src=images/icons/like.png alt="like">
+            <img src=images/icons/like.png alt="like" class="img_hover">
             105
         </span>
         <span class="vid-comm">
-            <img src=images/icons/comm.png alt="comment">
+            <img src=images/icons/comm.png alt="comment" class="img_hover">
             15 comments
         </span>
         <div class="com">
             <p>15 comments</p>
-            <img src=images/errow.png alt="errow">
+            <img src=images/errow.png alt="errow" class="link_hover">
         </div>
         <div class="persons__comments">
             <div class="one__persons">
@@ -300,7 +301,7 @@
                     <span>Tyler Warren</span>
                     <label>10:45, 8 Apr 17</label>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Thanks, Tyler W. </p>
-                    <a>Reply</a>
+                    <a class="link_hover">Reply</a>
                 </div>
             </div>
             <div class="one__persons">
@@ -311,7 +312,7 @@
                     <p> The comment above by Tyler encouraged me to add a сlass aptent taciti sociosqu ad litora torquent per
                         conubia nostra, per inceptos himenaeos. Vestibulum ut magna consequat ex interdum ullamcorper eget
                         non turpis. </p>
-                    <a>Reply</a>
+                    <a class="link_hover">Reply</a>
                 </div>
             </div>
             <div class="one__persons">
@@ -320,7 +321,7 @@
                     <span>Mathew McDonald</span>
                     <label>16:16, 8 Apr 17</label>
                     <p> Sed efficitur sodales tortor ut sollicitudin. </p>
-                    <a>Reply</a>
+                    <a class="link_hover">Reply</a>
                 </div>
             </div>
         </div>
@@ -356,11 +357,11 @@
             </div>
             <p>Lorem ipsum dolor sit amet</p>
             <span class="vid-comm">
-            <img src=images/icons/like.png alt="like">
+            <img src=images/icons/like.png alt="like" class="img_hover">
             105 likes
         </span>
             <span class="vid-comm">
-            <img src=images/icons/comm.png alt="comment">
+            <img src=images/icons/comm.png alt="comment" class="img_hover">
             15 comments
         </span> <br />
             <button class="button button_m button_hover"> Read more </button>
@@ -370,11 +371,11 @@
             </div>
             <p>Nullam molestie felis</p>
             <span class="vid-comm">
-            <img src=images/icons/like.png alt="like">
+            <img src=images/icons/like.png alt="like" class="img_hover">
             116 likes
         </span>
             <span class="vid-comm">
-            <img src=images/icons/comm.png alt="comment">
+            <img src=images/icons/comm.png alt="comment" class="img_hover">
             13 comments
         </span><br />
             <button class="button button_m button_hover"> Read more </button>
@@ -384,11 +385,11 @@
             </div>
             <p>Vivamus lacinia lacus</p>
             <span class="vid-comm">
-            <img src=images/icons/like.png alt="like">
+            <img src=images/icons/like.png alt="like" class="img_hover">
             210 likes
         </span>
             <span class="vid-comm">
-            <img src=images/icons/comm.png alt="comment">
+            <img src=images/icons/comm.png alt="comment" class="img_hover">
             26 comments
         </span><br />
             <button class="button button_m button_hover"> Read more </button>
